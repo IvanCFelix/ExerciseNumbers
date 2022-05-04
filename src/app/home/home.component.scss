@@ -1,0 +1,32 @@
+.logo {
+  width: 100px;
+}
+
+.container {
+  width: 100vw;
+  height: 90vh;
+  font-style: italic;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 40%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.form-container input {
+  margin-bottom: 10px;
+}
+
+.list {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}

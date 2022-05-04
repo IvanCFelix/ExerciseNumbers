@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="form-container">
+    <label>Nombre</label>
+    <input class="form-control" type="text" name="userName" [(ngModel)]="userName" />
+    <label>Numero</label>
+    <input
+      class="form-control"
+      type="number"
+      name="numberValue"
+      [(ngModel)]="numberValue"
+      placeholder="Ingrese el numero.."
+    />
+    <button class="btn btn-primary" (click)="showData()">Generar lista</button>
+
+    <div class="list" *ngIf="numberValue > 0">
+      <span>{{ numberValue + '=' }}</span>
+      [ <span *ngFor="let item of arrayNumbers" [ngStyle]="{ color: item.color }">{{ item.number + ', ' }}</span
+      >]
+    </div>
+  </div>
+</div>
